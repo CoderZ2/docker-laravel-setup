@@ -1,10 +1,12 @@
-### Start Building Docker
+# Docker, PHP, laravel Setup
+
+#### Start Building Docker
 
 ```
 docker compose up -d
 ```
 
-Open cmd and install require dependicies
+#### Open cmd and install require dependicies
 
 ```
 docker compose exec php sh
@@ -16,7 +18,7 @@ composer install
 npm install
 ```
 
-Database setup configruation for .env file
+#### Database setup configruation for .env file
 
 ```
 DB_CONNECTION=mysql
@@ -27,7 +29,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
  
-Open the browser and type below url
+#### Open the browser and type below url
 
 ```
 http://localhost:8090
