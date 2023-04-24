@@ -8,7 +8,7 @@ ENV BUILD_PACKAGES="curl-dev bash" \
 RUN rm -f /etc/nginx/conf.d/*
 COPY ./docker/nginx/default.conf /etc/nginx/conf.d/
 
-WORKDIR $APP_ROOT
+# WORKDIR $APP_ROOT
 COPY ./src ${APP_ROOT}
 
 EXPOSE 80 443

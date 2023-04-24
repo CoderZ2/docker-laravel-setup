@@ -2,6 +2,10 @@ version: "3"
 
 networks:
   laravel:
+volumes:
+  db_data:
+  db_redis:
+  
 
 services:
   nginx:
@@ -25,6 +29,8 @@ services:
       context: .
       dockerfile: ./docker/php/Dockerfile
     container_name: docker_php
+    ports:
+      - "5173:5173"
     volumes:
       - ./src:/var/www/html
     depends_on:
@@ -55,7 +61,7 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - "./docker/redis:/data"
+      - db_redis:/datad
     networks:
       - laravel
   
@@ -70,5 +76,3 @@ services:
   #     - "3000:3000"
   #   networks:
   #      - laravel
-volumes:
-    db_data: {}
