@@ -42,7 +42,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
  
-#### Copy below url and enter in browser
+#### Enter in your browser
 
 ```
 http://localhost:8090
