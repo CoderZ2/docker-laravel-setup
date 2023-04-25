@@ -6,7 +6,7 @@
 docker compose up -d --build
 ```
 
-### Please do following step before getting started
+### Please do following step by setp
 
 ```
 docker compose exec php sh
