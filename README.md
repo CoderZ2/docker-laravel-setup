@@ -6,7 +6,7 @@
 docker compose up -d --build
 ```
 
-### Please do following step by setp
+### Install requires dependencies
 
 ```
 docker compose exec php sh
